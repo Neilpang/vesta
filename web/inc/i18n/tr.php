@@ -1,7 +1,8 @@
 <?php
 /**
  * Vesta turkish language file
- * info@ozgurbozkurt.com (ozgur@forum.vestacp.com) 
+ * 2014.11.01 Özgür Bozkurt (info@ozgurbozkurt.com/ozgur@forum.vestacp.com)
+ * 2016.06.27 Selim Can CABA (info@selimcancaba.com)
  */
 
 $LANG['tr'] = array(
@@ -514,6 +515,7 @@ $LANG['tr'] = array(
     'NEW DIR' => 'YENİ KLASÖR',
     'DELETE' => 'SİL',
     'RENAME' => 'YENİDEN ADLANDIR',
+    'RIGHTS' => 'RIGHTS',
     'COPY' => 'KOPYALA',
     'ARCHIVE' => 'ARŞİVLE',
     'EXTRACT' => 'ÇIKART',
@@ -532,6 +534,7 @@ $LANG['tr'] = array(
     'Copy' => 'Kopyala',
     'Cancel' => 'Vazgeç',
     'Rename' => 'Yeniden Adlandır',
+    'Change Rights' => 'Change Rights',
     'Delete' => 'Sil',
     'Extract' => 'Çıkart',
     'Create' => 'Oluştur',
@@ -546,6 +549,15 @@ $LANG['tr'] = array(
     'already exists' => 'zaten var',
     'Create file' => 'Dosya oluştur',
     'Create directory' => 'Dizin oluştur',
+    'read by owner' => 'read by owner',
+    'write by owner' => 'write by owner',
+    'execute/search by owner' => 'execute/search by owner',
+    'read by group' => 'read by group',
+    'write by group' => 'write by group',
+    'execute/search by group' => 'execute/search by group',
+    'read by others' => 'read by others',
+    'write by others' => 'write by others',
+    'execute/search by others' => 'execute/search by others',
 
     'Add New object' => 'Yeni Nesne Ekle',
     'Save Form' => 'Formu Kaydet',
@@ -562,6 +574,8 @@ $LANG['tr'] = array(
     'Move backward through top menu' => 'Üst menüden arasında geriye doğru git',
     'Move forward through top menu' => 'Üst menüden arasında ileriye doğru git',
     'Enter focused element' => 'Odaklanmış elemanı gir',
+    'Move up through elements list' => 'Move up through elements list',
+    'Move down through elements list' => 'Move down through elements list',
 
     'Upload' => 'Yükle',
     'New File' => 'Yeni Dosya',
@@ -586,18 +600,47 @@ $LANG['tr'] = array(
     'Select Bunch of Files' => 'Dosya Demetini Seç',
     'Append File to the Current Selection' => 'Şuanki Seçime Dosya Ekle',
     'Select All Files' => 'Tüm Dosyaları Seç',
-    'shortcuts are inspired by magnificent GNU <a href="https://www.midnight-commander.org/">Midnight Commander</a> file manager' => 
+    'shortcuts are inspired by magnificent GNU <a href="https://www.midnight-commander.org/">Midnight Commander</a> file manager' =>
         'kısayollar muhteşem dosya yöneticisi <a href="https://www.midnight-commander.org/">Midnight Commander</a> arayüzünden esinlenilmiştir',
 
-    'Licence Key' => 'Licence Key',
-    'Enter License Key' => 'Enter License Key',
-    'Buy Licence' => 'Buy Licence',
-    'Buy Lifetime License' => 'Buy Lifetime License',
-    'Disable and Cancel Licence' => 'Disable and Cancel Licence',
-    'Licence Activated' => 'Licence Activated',
-    'Licence Deactivated' => 'Licence Deactivated',
-    'Restrict users so that they cannot use SSH and access only their home directory.' => 'Restrict users so that they cannot use SSH and access only their home directory.',
-    'Browse, copy, edit, view, and retrieve all of your web domain files using fully featured File Manager.' => 'Browse, copy, edit, view, and retrieve all of your web domain files using fully featured File Manager.',
-    'This is a commercial module, you would need to purchace license key to enable it.' => 'This is a commercial module, you would need to purchace license key to enable it.'
+    'Licence Key' => 'Lisans Anahtarı',
+    'Enter License Key' => 'Lisans Anahtarını Girin',
+    'Buy Licence' => 'Lisans Satın Al',
+    'Buy Lifetime License' => 'Ömür Boyu Lisans Satın Al',
+    'Disable and Cancel Licence' => 'Lisansı Devre Dışı Bırak ve İptal Et',
+    'Licence Activated' => 'Lisans Aktif',
+    'Licence Deactivated' => 'Lisans Pasif',
+    'Restrict users so that they cannot use SSH and access only their home directory.' => 'Kullanıcılar SSH ile sadece kendi ev dizinine erişebilir.',
+    'Browse, copy, edit, view, and retrieve all of your web domain files using fully featured File Manager.' => 'Tam özellikli Dosya Yöneticisi ile alan adınızdaki tüm dosyalarda listeleme, kopyalama, düzenleme ve görüntüleme yapabilirsiniz.',
+    'This is a commercial module, you would need to purchace license key to enable it.' => 'Bu ticari bir modül, bunu etkinleştirmek için lisans anahtarı satın almanız gerekir.',
+
+    'Minutes' => 'Dakikalık',
+    'Hourly' => 'Saatlik',
+    'Daily' => 'Günlük',
+    'Weekly' => 'Haftalık',
+    'Monthly' => 'Aylık',
+    'Run Command' => 'Komutu Çalıştır',
+    'every month' => 'her ay',
+    'every odd month' => 'her tek ay',
+    'every even month' => 'her çift ay',
+    'every day' => 'her gün',
+    'every odd day' => 'her tek gün',
+    'every even day' => 'her çift gün',
+    'weekdays (5 days)' => 'hafta içi (5 gün)',
+    'weekend (2 days)' => 'hafta sonu (2 gün)',
+    'Monday' => 'Pazartesi',
+    'Tuesday' => 'Salı',
+    'Wednesday' => 'Çarşamba',
+    'Thursday' => 'Perşembe',
+    'Friday' => 'Cuma',
+    'Saturday' => 'Cumartesi',
+    'Sunday' => 'Pazar',
+    'every hour' => 'her saat',
+    'every two hours' => 'her iki saatte bir',
+    'every minute' => 'her dakika',
+    'every two minutes' => 'her iki dakikada bir',
+    'every' => 'sürekli',
+    'Hour' => 'Saat',
+    'Minute' => 'Dakika'
 
 );

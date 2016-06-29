@@ -42,6 +42,7 @@ body { margin: 0; padding: 0; }
 .menu div.button.small.mkdir { background: url("/images/flat_icons.png") no-repeat scroll -176px -123px; }
 .menu div.button.small.del { background: url("/images/flat_icons.png") no-repeat scroll -176px -149px; }
 .menu div.button.small.rename { background: url("/images/flat_icons.png") no-repeat scroll -180px -180px; width: 12px; }
+.menu div.button.small.rights { background: url("/images/flat_icons.png") no-repeat scroll -237px -97px; }
 .menu div.button.small.copy { background: url("/images/flat_icons.png") no-repeat scroll -177px -210px; }
 .menu div.button.small.download { background: url("/images/flat_icons.png") no-repeat scroll -176px -243px; }
 .menu div.button.small.extract { background: url("/images/flat_icons.png") no-repeat scroll -232px -35px; }
@@ -52,13 +53,11 @@ body { margin: 0; padding: 0; }
 .menu div.button.small.mkdir:hover { background-position: -203px -123px; }
 .menu div.button.small.del:hover { background-position: -203px -149px; }
 .menu div.button.small.rename:hover { background-position: -207px -180px; }
+.menu div.button.small.rights:hover { background-position: -237px -122px; }
 .menu div.button.small.copy:hover { background-position: -204px -210px; }
 .menu div.button.small.download:hover { background-position: -204px -243px; }
 .menu div.button.small.extract:hover { background: url("/images/flat_icons.png") no-repeat scroll -255px -35px; }
 .menu div.button.small.archive:hover { background: url("/images/flat_icons.png") no-repeat scroll -201px -35px; }
-
-
-
 
 
 .menu div.button.disabled:hover,
@@ -309,6 +308,7 @@ ul.listing { list-style-type: none; padding: 18px 0 0; margin: -4px 0 0 -1px;  b
 .confirm-box { background-color: #333; width: 480px; font-family: arial; margin-left: 50px; border-radius: 3px; box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.5); }
 /*.confirm-box.replace { height: 230px; }*/
 .confirm-box .message { color: #EBE697; font-size: 16px; padding: 25px; margin-bottom: 60px; display: inline-block; }
+.confirm-box .results,
 .confirm-box .warning { color: #FF9500; font-size: 16px; padding: 25px; }
 .confirm-box .warning .title, 
 .confirm-box .message .title { color: #48B1B7; }
@@ -345,6 +345,13 @@ ul.listing { list-style-type: none; padding: 18px 0 0; margin: -4px 0 0 -1px;  b
 .confirm-box.rename.warning .warning { display: inline-block; }
 .confirm-box.rename.warning .controls.replace { display: inline-block; }
 .confirm-box.rename.warning .message { padding-bottom: 0; }
+
+.confirm-box.chmod .message { margin-bottom: 0; }
+.confirm-box.chmod .warning { padding: 10px 25px; }
+.confirm-box.chmod ul { padding: 10px 25px; }
+.confirm-box.chmod ul:last-of-type { margin-bottom: 38px; }
+.confirm-box.chmod li { list-style-type: none; }
+
 
 /*.confirm-box.archive { height: 468px; }*/
 .confirm-box.archive .message { margin-bottom: 38px; }
@@ -538,7 +545,7 @@ input[type="checkbox"] {
 }
 
 
-@media (max-width: 1320px) {
+@media (max-width: 1450px) {
   .menu div.button.mkfile,
   .menu div.button.mkdir { display: none; }
   .menu div.button.mkfile.small,
@@ -546,14 +553,14 @@ input[type="checkbox"] {
   .listing li .filename-holder { max-width: 30%; }
 }
 
-@media (max-width: 1210px) {
+@media (max-width: 1320px) {
   .menu div.button.del { display: none; }
   .menu div.button.del.small { display: inline-block; }
   .listing li .filename-holder { max-width: 25%; }
 }
 
 
-@media (max-width: 1180px) {
+@media (max-width: 1290px) {
   .menu div.button { display: none; }
   .menu div.button.medium,
   .menu div.button.small { display: inline-block; }
